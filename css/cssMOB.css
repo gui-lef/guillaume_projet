@@ -1,0 +1,52 @@
+@media screen and (max-width:399px ){
+
+    @font-face{
+        font-family:;
+        src:url('../font/upheavtt.ttf') format("ttf");
+        font-weight: normal;
+        font-style: normal;
+    }
+    body {
+        background-color: #767171;
+        font-family:"Upheaval TT (BRK)";
+    }
+
+    header {
+
+        text-align: center;
+    }
+
+    main {
+        background-color: blue;
+    a{
+        color:#5b9bd5;
+    }
+
+    }
+
+    footer {
+        background-color: green;
+    }
+
+    #btnWrath:active,#btnRebirth:active,#btnAfterbirth:active{
+
+        background:#404040;
+        color: #5b9bd5;
+        border-color: #262626;
+        border-width:1px;
+    }
+    #btnWrath,#btnRebirth,#btnAfterbirth{
+
+        background:#afabab;
+        color: #595959;
+        border-color: #262626;
+        border-width:1px;
+    }
+
+
+
+}
+
+
+
+
