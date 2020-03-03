@@ -1,4 +1,4 @@
-@media screen and (max-width:399px ){
+@media screen and (max-width:576px ){
 
     @font-face{
         font-family:;
@@ -28,21 +28,47 @@
         background-color: green;
     }
 
-    #btnWrath:active,#btnRebirth:active,#btnAfterbirth:active{
+    #btnWrath:active,#btnRebirth:active,#btnAfterbirth:active{ /*couleur des boutons actifs*/
 
         background:#404040;
         color: #5b9bd5;
         border-color: #262626;
         border-width:1px;
     }
-    #btnWrath,#btnRebirth,#btnAfterbirth{
+    #btnWrath,#btnRebirth,#btnAfterbirth{ /*couleur des boutons*/
 
         background:#afabab;
         color: #595959;
         border-color: #262626;
         border-width:1px;
+        width: 32%;
+        font-size: 1em;
+        height:100%;
     }
+#btnWrath{
+    font-size: 0.75em;
+    object-fit: cover;
+    height: 2.55em;
 
+}
+#btnRebirth, #btnAfterbirth
+{
+    padding-bottom: 1%;
+}
+#btn_jeux{
+    text-align: center;
+
+    }
+#select_persos{
+    height: 12vh;
+    background-color: #3d3d3d;
+    color: #5b9bd5;
+    border-color:red;
+    border-width:5px;
+}
+#plus{
+    color: #5b9bd5;
+}
 
 
 }
