@@ -1,41 +1,39 @@
-@media screen and (max-width:576px ){
+@media screen and (max-width:576px )
+{
 
-    @font-face{
-        font-family:;
+    @font-face
+    {
+        font-family:"Upheaval TT (BRK)";
         src:url('../font/upheavtt.ttf') format("ttf");
         font-weight: normal;
         font-style: normal;
     }
-    body {
+    body
+    {
         background-color: #767171;
         font-family:"Upheaval TT (BRK)";
     }
 
-    header {
+    header
+    {
 
         text-align: center;
     }
-
-    main {
-        background-color: blue;
-    a{
-        color:#5b9bd5;
-    }
-
-    }
-
-    footer {
+    footer
+    {
         background-color: green;
     }
 
-    #btnWrath:active,#btnRebirth:active,#btnAfterbirth:active{ /*couleur des boutons actifs*/
+    #btnWrath:active,#btnRebirth:active,#btnAfterbirth:active /*couleur des boutons actifs*/
+    {
 
         background:#404040;
         color: #5b9bd5;
         border-color: #262626;
         border-width:1px;
     }
-    #btnWrath,#btnRebirth,#btnAfterbirth{ /*couleur des boutons*/
+    #btnWrath,#btnRebirth,#btnAfterbirth /*couleur des boutons*/
+    {
 
         background:#afabab;
         color: #595959;
@@ -44,32 +42,96 @@
         width: 32%;
         font-size: 1em;
         height:100%;
+        box-shadow: #262626 0px -2px 6px -3px;
     }
-#btnWrath{
-    font-size: 0.75em;
-    object-fit: cover;
-    height: 2.55em;
+    #btnWrath
+        {
+        font-size: 0.75em;
+        object-fit: cover;
+        height: 2.55em;
 
-}
-#btnRebirth, #btnAfterbirth
-{
-    padding-bottom: 1%;
-}
-#btn_jeux{
-    text-align: center;
+        }
+    #btnRebirth, #btnAfterbirth
+        {
+        padding-bottom: 1%;
+        }
+    #btn_jeux
+        {
+        text-align: center;
+
+        }
+    #select_persos
+    {
+        height: 12vh;
+        background-color:#404040;
+        color: #5b9bd5;
+        border: solid #262626;
+        border-width:1px;
+        justify-content: space-around;
+        display: flex;
 
     }
-#select_persos{
-    height: 12vh;
-    background-color: #3d3d3d;
-    color: #5b9bd5;
-    border-color:red;
-    border-width:5px;
-}
-#plus{
-    color: #5b9bd5;
-}
+    .cercle
+    {
+        border-radius: 50%;
+        background-color: #767171;
+        height: 9vh;
+        width: 9vh;
+        margin: auto;
+        border: solid #5b9bd5;
+        border-width: 1px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cercle:active
+    {
+        box-shadow: 0px 0px 6px  #5b9bd5;
+    }
 
+/*zone de recherche*/
+
+    #plus
+    {
+        color: #5b9bd5;
+        font-size: 6vh;
+    }
+    #zone_rech
+    {
+        background-color: #3d3d3d;
+        display: flex;
+
+    }
+    .recherche{
+        width: 15vh;
+        height: 5vh;
+        margin: auto;
+    }
+    .btn_search
+    {
+        color: #5b9bd5;
+        width: 12vh;
+        height: 5vh;
+        margin: auto;
+    }
+    .btn_imgsearch{
+        width: 5vh;
+        height: 5vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .imgsearch{
+        width: 200%;
+    }
+    #txt_synergy{
+        font-size: 2.7vh;
+        text-align: center;
+        height: 10vh;
+        padding: 3vh;
+
+    }
 
 }
 

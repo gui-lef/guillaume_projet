@@ -6,9 +6,7 @@
     <title>The Synergies of Isaac</title>
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
     <link href="css/cssMOB.css" rel="stylesheet"/>
-    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jsMOB.js"></script>
+
 </head>
 <body>
 <header>
@@ -22,22 +20,50 @@
         <input type="button" id="btnAfterbirth" value="Afterbirth+">
     </div>
     <div id="select_persos">
-        select perso
+
+        <div type="button" class="cercle"><img src="img/Perso/isaac.png" class="img_persos"/> </div>
+        <div type="button" class="cercle"> <img src="img/Perso/azazel.png" class="img_persos"></div>
+        <div type="button" class="cercle"><img src="img/Perso/forgotten.png" class="img_persos"> </div>
+        <div type="button" class="cercle"> <img src="img/Perso/lilith.png" class="img_persos"></div>
+       <!-- <div type="button" class="cercle"> <img src="img/Perso/lost.png" class="img_persos"></div> -->
     </div>
-    <div class="container-fluid">
+    <!--<div class="container-fluid" >
         <div class="row justify-content-around">
-            <nav class="navbar navbar-dark bg-dark">
+            <nav class="navbar navbar-d bg-dark" >
                 <form class="form-inline">
-                    <input class="form-control col-4" type="search" placeholder="Item 1" aria-label="Search" >
+                    <input class="form-control col-3" type="search" placeholder="Item 1" aria-label="Search" >
                     <a id="plus">+</a>
-                    <input class="form-control col-4" type="search" placeholder="Item 2" aria-label="Search">
-                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
+                    <input class="form-control col-3" type="search" placeholder="Item 2" aria-label="Search">
+                    <button class="btn btn-outline-info my-1 my-sm-0" type="submit">Search</button>
                 </form>
             </nav>
         </div>
+    </div>-->
+
+    <div id="zone_rech">
+
+        <button class="btn_imgsearch"><img src="img/item/godhead.png" class="imgsearch" alt="selectionnez un objet" title="Selectionnez un item"></button>
+        <input type="search" placeholder="item 1" class="recherche"/>
+        <a id="plus">+</a>
+        <button class="btn_imgsearch"><img src="img/item/godhead.png" class="imgsearch" alt="selectionnez un objet" title="Selectionnez un item"> </button>
+        <input type="search" placeholder="item 2"class="recherche"/>
+        <button class="btn_search">Search</button>
     </div>
 </main>
-<footer>.</footer>
+<h2 id="txt_synergy">the synergy of "item1" and "item2" : </h2>
+<div id="video">
+    <iframe src="https://www.youtube.com/embed/fPMV8Q6pE-w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<footer>footer</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jsMOB.js"></script>
 </body>
 
 
