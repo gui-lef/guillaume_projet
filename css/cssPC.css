@@ -1,4 +1,4 @@
-@media screen and (max-width:576px )
+@media screen and (min-width:577px )
 {
 
     @font-face
@@ -15,18 +15,17 @@
         margin:1.5%;
     }
 
-    .entete
+    .entetepc
     {
-       height: 15vh;
+        height: 10vh;
         display: flex;
         justify-content:center ;
 
     }
-    #titre_afterbirth{
-        width: 80%;
-        height: 80%;
-    }
     #titrepc_afterbirth{
+        margin: auto;
+    }
+    #titre_afterbirth{
         display: none;
     }
 
@@ -52,21 +51,19 @@
         box-shadow: #262626 0px -2px 6px -3px;
     }
     #btnWrath
-        {
+    {
         font-size: 0.75em;
         object-fit: cover;
         height: 2.55em;
-
-        }
+    }
     #btnRebirth, #btnAfterbirth
-        {
+    {
         padding-bottom: 1%;
-        }
+    }
     #btn_jeux
-        {
+    {
         text-align: center;
-
-        }
+    }
     #select_persos
     {
         height: 12vh;
@@ -76,7 +73,6 @@
         border-width:1px;
         justify-content: space-around;
         display: flex;
-
     }
     .cercle
     {
@@ -96,7 +92,7 @@
         box-shadow: 0px 0px 6px  #5b9bd5;
     }
 
-/*zone de recherche*/
+    /*zone de recherche*/
 
     #plus
     {
@@ -110,7 +106,7 @@
 
     }
     .recherche{
-        width: 13vh;
+        width: 15vh;
         height: 5vh;
         margin: auto;
     }
@@ -138,17 +134,20 @@
     {
         font-size: 2vh;
         text-align: center;
-        height: 5vh;
-        margin-top: 3.5vh;
+        height: 3vh;
+        margin-top: 2vh;
     }
     .video
     {
-        height: 40vh;
+        height: 50vh;
+        text-align: center;
+
+
     }
     .video_result
     {
-        width: 100%;
-        height: 40vh;
+        width: 30%;
+        height: 30vh;
         box-shadow: #3d3d3d 0px 0px 8px;
     }
 
