@@ -1,4 +1,4 @@
-@media screen and (min-width:916px ) {
+@media screen and (min-width:577px) and (max-width:915px){
 
     @font-face {
         font-family: "Upheaval TT (BRK)";
@@ -27,27 +27,26 @@
         display: none;
     }
 
-
-
-    #btnWrath, #btnRebirth, #btnAfterbirth/*couleur des boutons*/
-    {
-
-        background: #afabab;
-        color: #595959;
-        border-color: #262626;
-        border-width: 1px;
-        width: 16%;
-        font-size: 1.3em;
-        height: 100%;
-        box-shadow: #262626 0px -2px 6px -3px;
-    }
-    #btnWrath:active, #btnRebirth:active, #btnAfterbirth:active  /*couleur des boutons actifs*/
+    #btnWrath:active, #btnRebirth:active, #btnAfterbirth:active /*couleur des boutons actifs*/
     {
 
         background: #404040;
         color: #5b9bd5;
         border-color: #262626;
         border-width: 1px;
+    }
+
+    #btnWrath, #btnRebirth, #btnAfterbirth /*couleur des boutons*/
+    {
+
+        background: #afabab;
+        color: #595959;
+        border-color: #262626;
+        border-width: 1px;
+        width: 24%;
+        font-size: 1.3em;
+        height: 100%;
+        box-shadow: #262626 0px -2px 6px -3px;
     }
 
     /* Autre méthode bouton Wrath}
@@ -68,7 +67,7 @@
     }
 
     #select_persos {
-        max-width: 50%;
+        max-width: 80%;
         height: 12vh;
         background-color: #404040;
         color: #5b9bd5;
@@ -106,7 +105,7 @@
     #zone_rech {
         background-color: #3d3d3d;
         display: flex;
-        width: 50%;
+        width: 80%;
         margin: auto;
         box-shadow: #3d3d3d 0px 0px 6px;
         border: solid #262626;
@@ -155,7 +154,7 @@
     }
 
     .video_result {
-        width: 50%;
+        width: 80%;
         height: 50vh;
         box-shadow: #3d3d3d 0px 0px 8px;
     }
@@ -167,6 +166,5 @@
         bottom: 0;
     }
 
-}
-
+    }
 

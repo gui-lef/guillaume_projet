@@ -51,7 +51,7 @@
         height:100%;
         box-shadow: #262626 0px -2px 6px -3px;
     }
-    #btnWrath
+   /* #btnWrath
         {
         font-size: 0.75em;
         object-fit: cover;
@@ -61,7 +61,7 @@
     #btnRebirth, #btnAfterbirth
         {
         padding-bottom: 1%;
-        }
+        }*/
     #btn_jeux
         {
         text-align: center;
@@ -76,6 +76,7 @@
         border-width:1px;
         justify-content: space-around;
         display: flex;
+        box-shadow: #3d3d3d 0px 0px 6px;
 
     }
     .cercle
@@ -113,10 +114,13 @@
         width: 13vh;
         height: 5vh;
         margin: auto;
+        box-shadow: #3d3d3d 0px 0px 6px;
+        border: solid #262626;
+        border-width: 1px;
     }
     .btn_search
     {
-        color: #5b9bd5;
+        color: #262626;
         width: 12vh;
         height: 5vh;
         margin: auto;
@@ -161,7 +165,7 @@
     }
 
 }
-
-
+@media screen and (max-width:340px ) {
+}
 
 
