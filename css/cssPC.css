@@ -29,7 +29,7 @@
 
 
 
-    #btnWrath, #btnRebirth, #btnAfterbirth/*couleur des boutons*/
+    .btn /*style des boutons*/
     {
 
         background: #afabab;
@@ -40,14 +40,16 @@
         font-size: 1.3em;
         height: 100%;
         box-shadow: #262626 0px -2px 6px -3px;
+        cursor: pointer;
     }
-    #btnWrath:active, #btnRebirth:active, #btnAfterbirth:active  /*couleur des boutons actifs*/
+    .active, .btn:hover  /*style des boutons actifs*/
     {
 
         background: #404040;
         color: #5b9bd5;
         border-color: #262626;
         border-width: 1px;
+
     }
 
     /* Autre méthode bouton Wrath}
@@ -93,8 +95,13 @@
         justify-content: center;
     }
 
-    .cercle:active {
+    .active {
         box-shadow: 0px 0px 6px #5b9bd5;
+        background-color: #3d3d3d;
+
+    }
+    .cercle:hover{
+        background-color: #3d3d3d;
     }
 
     /*zone de recherche*/
