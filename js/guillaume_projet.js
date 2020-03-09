@@ -24,12 +24,12 @@ for (var i1 = 0; i1 < circles.length; i1++) {
 
 /*boutons jeux Rebirth----------------------------------------------------------------------------*/
 var headerR = document.getElementById("btnR_jeux");
-var btnsR = headerR.getElementsByClassName("btnR");
+var btnsR = headerR.getElementsByClassName("btn");
 for (var ir = 0; ir < btnsR.length; ir++) {
     btnsR[ir].addEventListener("click", function() {
-        var currentR = document.getElementsByClassName(" active");
-        currentR[0].className = currentR[0].className.replace(" active", "");
-        this.className += " active";
+        var currentR = document.getElementsByClassName(" active_R");
+        currentR[0].className = currentR[0].className.replace(" active_R", "");
+        this.className += " active_R";
     });
 }
 

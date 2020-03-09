@@ -212,7 +212,7 @@
         cursor: pointer;
     }
 
-    .active, .btnR:hover /*style des boutons actifs*/
+    .active_R, .btnR:hover /*style des boutons actifs*/
     {
 
         background: #404040;
