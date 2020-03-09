@@ -3,6 +3,9 @@
     @font-face {
         font-family: "Upheaval TT (BRK)";
         src: url('../font/upheavtt.ttf') format("ttf");
+        src: url("../font/upheaval.svg") format("svg");
+        src: url("../font/upheaval.fon") format("fon");
+        src: url("../font/upheaval.woff") format("woff");
         font-weight: normal;
         font-style: normal;
     }
@@ -28,7 +31,6 @@
     }
 
 
-
     .btn /*style des boutons*/
     {
 
@@ -42,13 +44,15 @@
         box-shadow: #262626 0px -2px 6px -3px;
         cursor: pointer;
     }
-    .active, .btn:hover  /*style des boutons actifs*/
+
+    .active, .btn:hover /*style des boutons actifs*/
     {
 
         background: #404040;
         color: #5b9bd5;
         border-color: #262626;
         border-width: 1px;
+        box-shadow: #5b9bd5 0px -2px 6px -3px;
 
     }
 
@@ -95,12 +99,13 @@
         justify-content: center;
     }
 
-    .active {
+    .active_cercle {
         box-shadow: 0px 0px 6px #5b9bd5;
         background-color: #3d3d3d;
 
     }
-    .cercle:hover{
+
+    .cercle:hover {
         background-color: #3d3d3d;
     }
 
@@ -174,6 +179,350 @@
         bottom: 0;
     }
 
-}
 
+    /*page rebirth -------------------------------------------------------------------------------------------------------- */
+
+    .entetepcR {
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #titrepc_rebirth {
+        margin: auto;
+    }
+
+    #titre_rebirth {
+        display: none;
+    }
+
+
+    .btnR /*style des boutons*/
+    {
+
+        background: #afabab;
+        color: #595959;
+        border-color: #262626;
+        border-width: 1px;
+        width: 16%;
+        font-size: 1.3em;
+        height: 100%;
+        box-shadow: #262626 0px -2px 6px -3px;
+        cursor: pointer;
+    }
+
+    .active, .btnR:hover /*style des boutons actifs*/
+    {
+
+        background: #404040;
+        color: greenyellow;
+        border-color: greenyellow;
+        border-width: 1px;
+        box-shadow: greenyellow 0px -2px 6px -3px;
+
+    }
+
+    /* Autre méthode bouton Wrath}
+     #btnWrath
+
+         font-size: 0.75em;
+         object-fit: cover;
+         height: 2.55em;
+     }
+     #btnRebirth, #btnAfterbirth
+     {
+         padding-bottom: 1%;
+     }
+
+     */
+    #btnR_jeux {
+        text-align: center;
+    }
+
+    #select_persosR {
+        max-width: 50%;
+        height: 12vh;
+        background-color: #404040;
+        color: greenyellow;
+        border: solid #262626;
+        border-width: 1px;
+        justify-content: space-around;
+        display: flex;
+        margin: auto;
+        box-shadow: #3d3d3d 0px 0px 6px;
+    }
+
+    .cercleR {
+        border-radius: 50%;
+        background-color: #767171;
+        height: 9vh;
+        width: 9vh;
+        margin: auto;
+        border: solid greenyellow;
+        border-width: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .active_cercle_R {
+        box-shadow: 0px 0px 6px greenyellow;
+        background-color: #3d3d3d;
+
+    }
+
+    .cercleR:hover {
+        background-color: #3d3d3d;
+    }
+
+    /*zone de recherche*/
+    #plusR {
+        color: greenyellow;
+        font-size: 6vh;
+    }
+
+    #zone_rechR {
+        background-color: #3d3d3d;
+        display: flex;
+        width: 50%;
+        margin: auto;
+        box-shadow: #3d3d3d 0px 0px 6px;
+        border: solid #262626;
+        border-width: 1px;
+
+    }
+
+    .recherche {
+        width: 20vh;
+        height: 5vh;
+        margin: auto;
+    }
+
+    .btn_search {
+        color: #262626;
+        width: 12vh;
+        height: 5vh;
+        margin: auto;
+    }
+
+    .btn_imgsearch {
+        width: 5vh;
+        height: 5vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imgsearch {
+        width: 200%;
+    }
+
+    /*fin zone recherche*/
+    #txt_synergy {
+        font-size: 2vh;
+        text-align: center;
+        height: 3vh;
+        margin-top: 2vh;
+    }
+
+    .video {
+        height: 50vh;
+        text-align: center;
+
+    }
+
+    .video_result {
+        width: 50%;
+        height: 50vh;
+        box-shadow: #3d3d3d 0px 0px 8px;
+    }
+
+    footer {
+        height: 3vh;
+        font-size: 1.5vh;
+        position: absolute;
+        bottom: 0;
+    }
+
+    /*page wotl -------------------------------------------------------------------------------------------------------- */
+
+    @font-face {
+        font-family: "Upheaval TT (BRK)";
+        src: url('../font/upheavtt.ttf') format("ttf");
+        font-weight: normal;
+        font-style: normal;
+    }
+    body {
+        background-color: #767171;
+        font-family: "Upheaval TT (BRK)";
+        margin: 1.5%;
+    }
+
+    .entetepcW {
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #titrepc_wotl {
+        margin: auto;
+    }
+
+    #titre_wotl {
+        display: none;
+    }
+
+
+    .btn_W /*style des boutons*/
+    {
+
+        background: #afabab;
+        color: #595959;
+        border-color: #262626;
+        border-width: 1px;
+        width: 16%;
+        font-size: 1.3em;
+        height: 100%;
+        box-shadow: #262626 0px -2px 6px -3px;
+        cursor: pointer;
+    }
+
+    .active_W, .btnW:hover /*style des boutons actifs*/
+    {
+
+        background: #404040;
+        color: red;
+        border-color: #262626;
+        border-width: 1px;
+        box-shadow: red 0px -2px 6px -3px;
+
+    }
+
+    /* Autre méthode bouton Wrath}
+     #btnWrath
+
+         font-size: 0.75em;
+         object-fit: cover;
+         height: 2.55em;
+     }
+     #btnRebirth, #btnAfterbirth
+     {
+         padding-bottom: 1%;
+     }
+
+     */
+    #btnW_jeux {
+        text-align: center;
+    }
+
+    #select_persosW {
+        max-width: 50%;
+        height: 12vh;
+        background-color: #404040;
+        color: red;
+        border: solid #262626;
+        border-width: 1px;
+        justify-content: space-around;
+        display: flex;
+        margin: auto;
+        box-shadow: #3d3d3d 0px 0px 6px;
+    }
+
+    .cercleW {
+        border-radius: 50%;
+        background-color: #767171;
+        height: 9vh;
+        width: 9vh;
+        margin: auto;
+        border: solid red;
+        border-width: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .active_cercle_W {
+        box-shadow: 0px 0px 6px red;
+        background-color: #3d3d3d;
+
+    }
+
+    .cercleW:hover {
+        background-color: #3d3d3d;
+    }
+
+    /*zone de recherche*/
+    #plusW {
+        color: red;
+        font-size: 6vh;
+    }
+
+    #zone_rechW {
+        background-color: #3d3d3d;
+        display: flex;
+        width: 50%;
+        margin: auto;
+        box-shadow: #3d3d3d 0px 0px 6px;
+        border: solid #262626;
+        border-width: 1px;
+
+    }
+
+    .recherche {
+        width: 20vh;
+        height: 5vh;
+        margin: auto;
+    }
+
+    .btn_search {
+        color: #262626;
+        width: 12vh;
+        height: 5vh;
+        margin: auto;
+    }
+
+    .btn_imgsearch {
+        width: 5vh;
+        height: 5vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imgsearch {
+        width: 200%;
+    }
+
+    /*fin zone recherche*/
+    #txt_synergy {
+        font-size: 2vh;
+        text-align: center;
+        height: 3vh;
+        margin-top: 2vh;
+    }
+
+    .video {
+        height: 50vh;
+        text-align: center;
+
+    }
+
+    .video_result {
+        width: 50%;
+        height: 50vh;
+        box-shadow: #3d3d3d 0px 0px 8px;
+    }
+
+    footer {
+        height: 3vh;
+        font-size: 1.5vh;
+        position: absolute;
+        bottom: 0;
+    }
+
+}
 
