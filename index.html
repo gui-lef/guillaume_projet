@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" user-scalable="1.0">
     <title>The Synergies of Isaac</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="css/cssMOB.css" rel="stylesheet"/>
-    <link href="css/cssINTER.css" rel="stylesheet"/>
+   <!--<link href="css/bootstrap.css" rel="stylesheet"/>-->
     <link href="css/cssPC.css" rel="stylesheet"/>
+    <link href="css/cssINTER.css" rel="stylesheet"/>
+    <link href="css/cssMOB.css" rel="stylesheet"/>
+
 
 </head>
 <body>
@@ -15,17 +16,17 @@
 <header>
     <!-- <h1>The Synergies of Isaac</h1> -->
     <div class="entete"><img src="img/logo/logoprojetafterbirth.png" id="titre_afterbirth"></div>
-    <div class="entetepc"><img src="img/logo/pclogoafter.png" id="titrepc_afterbirth"></div>
+    <div class="entetepc"><img src="img/logo/pclogoafterbirth.png" id="titrepc_afterbirth"></div>
 </header>
 <main>
     <div id="btn_jeux">
-        <button class="btn">WotL</button>
-        <button class="btn">Rebirth</button>
-        <button class="btn active">Afterbirth+</button>
+        <button class="btn" id="btnwotl">WotL</button>
+        <button class="btn" id="btnrebirth">Rebirth</button>
+        <button class="btn active" id="btnafterbirth">Afterbirth+</button>
     </div>
     <div id="select_persos">
 
-        <button class="cercle active_cercle"><img src="img/Perso/isaac.png" class="img_persos"/> </button>
+        <button class="cercle active"><img src="img/Perso/isaac.png" class="img_persos"/> </button>
         <button class="cercle"> <img src="img/Perso/azazel.png" class="img_persos"/></button>
         <button class="cercle"><img src="img/Perso/forgotten.png" class="img_persos"/> </button>
         <button class="cercle"> <img src="img/Perso/lilith.png" class="img_persos"/></button>
@@ -71,7 +72,37 @@
 
 
 
-<script type="text/javascript" src="js/guillaume_projet.js"></script>
+<!--<script>
+    function suppr()
+    {
+            document.getElementById("btnafterbirth").classList.remove("active");
+            document.getElementById("btnrebirth").classList.remove("active_R");
+            document.getElementById("btnwotl").classList.remove("active_W");
+    }
+
+    function class_active(id)
+    {
+
+        suppr();
+        if (id=="btnrebirth")
+        {
+            document.getElementById("btnrebirth").classList.add("active_R");
+        }
+        else if (id=="btnafterbirth")
+        {
+            document.getElementById("btnafterbirth").classList.add("active");
+        }
+        else
+        {
+            document.getElementById("btnwotl").classList.add("active_W");
+        }
+    };
+   document.getElementById("btnafterbirth").addEventListener("click",function(){class_active("btnafterbirth");},false);
+   document.getElementById("btnrebirth").addEventListener("click",function(){class_active("btnrebirth");},false);
+   document.getElementById("btnwotl").addEventListener("click",function(){class_active("btnwotl");},false);
+</script> -->
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/guillaume_projet.js"></script>
 </body>
 
 </html>

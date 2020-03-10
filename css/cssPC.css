@@ -1,3 +1,9 @@
+body {
+    background-color: #767171;
+    font-family: "Upheaval TT (BRK)";
+    margin: 1.5%;
+}
+
 @media screen and (min-width:916px ) {
 
     @font-face {
@@ -8,11 +14,6 @@
         src: url("../font/upheaval.woff") format("woff");
         font-weight: normal;
         font-style: normal;
-    }
-    body {
-        background-color: #767171;
-        font-family: "Upheaval TT (BRK)";
-        margin: 1.5%;
     }
 
     .entetepc {
@@ -34,7 +35,9 @@
     .btn /*style des boutons*/
     {
 
+        padding: 10px;
         background: #afabab;
+        font-family: "Upheaval TT (BRK)";
         color: #595959;
         border-color: #262626;
         border-width: 1px;
@@ -43,9 +46,10 @@
         height: 100%;
         box-shadow: #262626 0px -2px 6px -3px;
         cursor: pointer;
+        border-radius: 3px;
     }
 
-    .active, .btn:hover /*style des boutons actifs*/
+    .active /*style des boutons actifs*/
     {
 
         background: #404040;
@@ -53,7 +57,12 @@
         border-color: #262626;
         border-width: 1px;
         box-shadow: #5b9bd5 0px -2px 6px -3px;
+        border-radius: 4px;
 
+    }
+    .btn:hover
+    {
+        box-shadow:#afabab 0px -5px 6px -5px;
     }
 
     /* Autre méthode bouton Wrath}
@@ -84,6 +93,7 @@
         display: flex;
         margin: auto;
         box-shadow: #3d3d3d 0px 0px 6px;
+        border-radius: 3px 3px 0px 3px;
     }
 
     .cercle {
@@ -113,6 +123,7 @@
     #plus {
         color: #5b9bd5;
         font-size: 6vh;
+        margin: auto;
     }
 
     #zone_rech {
@@ -120,22 +131,28 @@
         display: flex;
         width: 50%;
         margin: auto;
+        height: 8vh;
         box-shadow: #3d3d3d 0px 0px 6px;
         border: solid #262626;
         border-width: 1px;
+        border-radius: 0 3px 3px 3px;
+
 
     }
 
     .recherche {
         width: 20vh;
         height: 5vh;
-        margin: auto;
+        font-family: "Upheaval TT (BRK)";
+        text-align: center;
     }
 
     .btn_search {
-        color: #262626;
+        color: #767171;
         width: 12vh;
         height: 5vh;
+        font-family: "Upheaval TT (BRK)";
+        font-size: 2.5vh;
         margin: auto;
     }
 
@@ -158,6 +175,7 @@
         text-align: center;
         height: 3vh;
         margin-top: 2vh;
+        color: #262626;
     }
 
     .video {
@@ -299,12 +317,12 @@
         margin: auto;
     }
 
-    .btn_search {
+    /*.btn_search {
         color: #262626;
         width: 12vh;
         height: 5vh;
         margin: auto;
-    }
+    }*/
 
     .btn_imgsearch {
         width: 5vh;
@@ -477,12 +495,12 @@
         margin: auto;
     }
 
-    .btn_search {
+    /*.btn_search {
         color: #262626;
         width: 12vh;
         height: 5vh;
         margin: auto;
-    }
+    }*/
 
     .btn_imgsearch {
         width: 5vh;

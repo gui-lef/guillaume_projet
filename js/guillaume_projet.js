@@ -1,28 +1,27 @@
 
-/*boutons jeux*/
-var header = document.getElementById("btn_jeux");
-var btns = header.getElementsByClassName("btn");
+/*boutons jeux
+var btns = document.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("active");
+        var current = document.getElementsByClassName(" active");
         current[0].className = current[0].className.replace(" active", "");
         this.className += " active";
+
     });
 }
 
-/*boutons personnages*/
-var select = document.getElementById("select_persos");
-var circles = select.getElementsByClassName("cercle");
-for (var i1 = 0; i1 < circles.length; i1++) {
-    circles[i1].addEventListener("click", function() {
-        var current1 = document.getElementsByClassName(" active_cercle");
-        current1[0].className = current1[0].className.replace(" active_cercle", "");
+/*boutons personnages
+var circles = document.getElementsByClassName("cercle");
+for (var i = 0; i < circles.length; i++) {
+    circles[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName(" active_cercle");
+        current[0].className = current[0].className.replace(" active_cercle", "");
         this.className += " active_cercle";
     });
 }
 
 
-/*boutons jeux Rebirth----------------------------------------------------------------------------*/
+/*boutons jeux Rebirth----------------------------------------------------------------------------
 var headerR = document.getElementById("btnR_jeux");
 var btnsR = headerR.getElementsByClassName("btn");
 for (var ir = 0; ir < btnsR.length; ir++) {
@@ -55,3 +54,34 @@ for (var iw = 0; iw < btnsR.length; iw++) {
         this.className += " active_W";
     });
 }*/
+var btns=$("[name='btn']");
+    function suppr()
+    {
+        btns=$("[name='btn']");
+        for (let i=0;i<3;i++)
+        {
+            btns[i].removeClass("active activeR activeW");
+        }
+    }
+
+    function class_active(id)
+    {
+
+        suppr();
+        if (id=="btnrebirth")
+        {
+            btns[0].addClass("active_R");
+        }
+        else if (id=="btnafterbirth")
+        {
+            btns[1].addClass("active");
+        }
+        else
+        {
+            btns[2].addClass("active_W");
+        }
+    };
+    btns[0].on("click",function(){class_active("btnwotl");});
+    btns[1].on("click",function(){class_active("btnrebirth");});
+    btns[2].on("click",function(){class_active("btnafterbirth");});
+
